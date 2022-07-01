@@ -1,0 +1,28 @@
+{
+  "name": "heroku_node",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Muwavictoria/heroku_node.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.1",
+    "hbs": "^4.2.0",
+    "nodemon": "^2.0.18"
+  },
+  "bugs": {
+    "url": "https://github.com/Muwavictoria/heroku_node/issues"
+  },
+  "homepage": "https://github.com/Muwavictoria/heroku_node#readme"
+
+
+}
