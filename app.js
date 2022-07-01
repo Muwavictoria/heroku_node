@@ -1,7 +1,13 @@
 const express = require('express'); 
 const path = require('path');
 
+const{
+    PORT = 5002,
+    NODE_ENV = 'development',
 
+}=process.env;
+
+const IN_PROD = NODE_ENV === 'production';
 
 const app = express();
 app.set('view engine', 'hbs');
@@ -12,6 +18,6 @@ app.use(express.static(publicDirectory));
 app.use('/', require('./routers/pages'));
 
 
-app.listen(5002,() => {
-    console.log('server started on port 5002');
+app.listen(PORT,() => {
+    console.log(`server started on port ${PORT}`);
 });
